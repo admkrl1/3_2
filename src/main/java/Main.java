@@ -25,11 +25,13 @@ public class Main {
 
     
     for (int k = 1; k <= dlugoscBoku; k++) {
-      for (int l = 1; l <= dlugoscBoku + 1 - k; l++) {
+      for (int l = 1; l <= dlugoscBoku; l++) {
+          if (l==dlugoscBoku-1 || k==dlugoscBoku-1 || k==dlugoscBoku-l-1) {
+              System.out.print("* ");
+          } else {
               System.out.print("  ");
+          }
       }
-
-      for (int l = 1; l <= k; l++))
       System.out.println();
     }
     
