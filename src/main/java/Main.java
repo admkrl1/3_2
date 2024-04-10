@@ -26,7 +26,7 @@ public class Main {
     
     for (int k = 1; k <= dlugoscBoku; k++) {
       for (int l = 1; l <= dlugoscBoku; l++) {
-          if (l==dlugoscBoku-1 || k==dlugoscBoku-1 || k==dlugoscBoku-l-1) {
+          if (l==dlugoscBoku || k==dlugoscBoku || l==dlugoscBoku-k+1) {
               System.out.print("* ");
           } else {
               System.out.print("  ");
